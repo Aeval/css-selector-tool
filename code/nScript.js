@@ -17,7 +17,7 @@ var nd___vo = {
   },
   add: function() {
     $("body").append("<div id='nd___box'></div>");
-    $("#nd___box").append("<button id='nd___close'>X</button><span id='nd___title'>CSS Selector Tester</span>");
+    $("#nd___box").append("<button id='nd___close'>X</button><span id='nd___title'>CSS Selector Tool</span>");
     $("#nd___box").append("<form action='#' id='nd___form'></form>");
     $("#nd___form").append("<p><input type='text' id='nd___selector' placeholder='Selector' /></p><p><a id='nd___clean'>Clear Selector</a></p>");
     $("#nd___form").append("<p>Element: <span id='nd___status'>undefined</span></p>");
