@@ -44,7 +44,7 @@ var nd___vo = {
         } else {
           if (nd___vo.cacheE != null){
             $(nd___vo.cacheE).css("outlineColor", "RGB(204,0,0)");
-            $(nd___vo.cacheE).css("outlineStyle", "dashed");
+            $(nd___vo.cacheE).css("outlineStyle", "dotted");
             $(nd___vo.cacheE).css("outlineWidth", "2px");
             $(nd___vo.cacheE).addClass("nd___highlighted");
           }
