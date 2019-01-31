@@ -16,6 +16,7 @@ var nd___vo = {
       nd___vo.go();
     }
   },
+  
   add: function() {
     $("body").append("<div id='nd___box'></div>");
     $("#nd___box").append("<button id='nd___close'>X</button><span id='nd___title'>CSS Selector Tool</span>");
