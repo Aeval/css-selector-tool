@@ -3,11 +3,11 @@
       "scripts": [ "background.js" ]
    },
    "browser_action": {
-      "default_icon": "cst.png"
+      "default_icon": "fox128.png"
    },
-	 "icons": { "16": "cst-16.png",
-	            "48": "cst-48.png",
-	           "128": "cst.png" },
+	 "icons": { "16": "fox16.png",
+	            "48": "fox48.png",
+	           "128": "fox128.png" },
    "content_scripts": [ {
       "css": [ "nStyles.css" ],
       "matches": [ "http://*/*", "https://*/*", "file://*/*" ]
@@ -17,5 +17,5 @@
    "name": "CSS Selector Tester",
    "permissions": [ "\u003Call_urls\u003E", "tabs"],
    "update_url": "http://clients2.google.com/service/update2/crx",
-   "version": "1.3.3"
+   "version": "1.0.0"
 }
