@@ -22,11 +22,12 @@ var nd___vo = {
     $("#nd___form").append("<p><input type='text' id='nd___selector' placeholder='Selector' /></p><p><a id='nd___clean'>Clear Selector</a></p>");
     $("#nd___form").append("<p>Element: <span id='nd___status'>undefined</span></p>");
     $("#nd___form").append("<p class='checkbox'><input type='checkbox' id='nd___ohighlight' checked='true' /><label for='nd___ohighlight'>Highlight</label></p>");
+    $("#nd___box").append("<button class='pointer' id='genPage'>Generate</button>");
   },
   observe: function() {
     $("#nd___form").on("submit", function(){ return false; });
     $("#nd___selector").keyup(function(){nd___vo.go();});
-    $("#nd___box").draggable({ opacity: 0.35 }).resizable({ minWidth: 305 , minHeight: 155 });
+    $("#nd___box").draggable({ opacity: 0.35 }).resizable({ minWidth: 305 , minHeight: 175 });
     $("#nd___clean").click(function(){
       nd___vo.alert("undefined");
       nd___vo.clean();
@@ -126,3 +127,28 @@ if($("#nd___box")[0]){
   nd___vo.add();
   nd___vo.observe();
 }
+
+
+var desiredTextOne = document.getElementById('tab-main').innerHTML;
+var desiredTextTwo = document.getElementById('tab-headers').innerHTML;
+var desiredTextThree = document.getElementById('tab-cookies').innerHTML;
+var desiredTextFour = document.getElementById('tab-jdbc').innerHTML;
+var desiredTextFive = document.getElementById('tab-properties').innerHTML;
+//var desiredTextSix = document.getElementById('tab-relations').innerHTML;
+var desiredTextSeven = document.getElementById('tab-errors').innerHTML;
+
+
+
+var html = "<div id='chart1'>" + desiredTextOne + "</div>";
+html += "<div id='chart2'>" + desiredTextTwo + "</div>";
+html += "<div id='chart3'>" + desiredTextThree + "</div>";
+html += "<div id='chart4'>" + desiredTextFour + "</div>";
+html += "<div id='chart5'>" + desiredTextFive + "</div>";
+//html += "<div id='chart6'>" + desiredTextSix + "</div>";
+html += "<div id='chart7'>" + desiredTextSeven + "</div>";
+
+$('#genPage').on('click', function() {
+  var newWindow = window.open();
+
+  newWindow.document.write(html);
+});

@@ -187,3 +187,8 @@
   font-size: 1.1em !important;
 	text-shadow: 0 1px 0 #ffffff;
 }
+.pointer {
+	cursor: pointer;
+	background-color: #425ff4;
+	color: #eee;
+}
