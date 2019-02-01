@@ -22,7 +22,7 @@ var nd___vo = {
     $("#nd___form").append("<p><input type='text' id='nd___selector' placeholder='Selector' /></p><p><a id='nd___clean'>Clear Selector</a></p>");
     $("#nd___form").append("<p>Element: <span id='nd___status'>undefined</span></p>");
     $("#nd___form").append("<p class='checkbox'><input type='checkbox' id='nd___ohighlight' checked='true' /><label for='nd___ohighlight'>Highlight</label></p>");
-    $("#nd___box").append("<button class='pointer' id='genPage'>Generate</button>");
+    $("#nd___box").append("<button id='genPage'>Generate</button>");
   },
   observe: function() {
     $("#nd___form").on("submit", function(){ return false; });

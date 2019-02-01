@@ -18,7 +18,7 @@
   z-index: 9999999999999999999999 !important; /* really, lol */
   color: #222 !important;
 	width: 305px;
-	height: 155px;
+	height: 175px;
 	text-shadow: 1px 1px #fff;
 	line-height: 16px !important;
 }
@@ -187,8 +187,12 @@
   font-size: 1.1em !important;
 	text-shadow: 0 1px 0 #ffffff;
 }
-.pointer {
+#genPage{
 	cursor: pointer;
 	background-color: #425ff4;
+	width: 65px;
+	text-align: center;
+	height: 25px;
+	text-shadow: none;
 	color: #eee;
 }
