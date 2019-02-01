@@ -144,17 +144,28 @@ if ($("#nd___box")[0]) {
 */
 
 
+
+
+
 var desiredText = document.getElementsByClassName('tab-content')[0].innerHTML;
 //var errorCategory = document.getElementsByClassName('pre-scrollable').innerHTML;
 //var areaAffected = document.getElementsByClassName('tab-content')[0].innerHTML;
 //var Flags = document.getElementsByClassName('tab-content')[0].getElementsByTagName('td')
 
 
-var blob = new Blob([JSON.stringify(desiredText, null, 2)], {type : 'application/json'});
+
+
+html2canvas(document.body).then(function(canvas) {
+  document.body.appendChild(canvas);
+});
+
 
 
 var newWindow = window.open();
-newWindow.document.write('desiredText' + blob);
+//newWindow.document.write('Flags' + Flags);
+//newWindow.document.write('areaAffected' + areaAffected);
+//newWindow.document.write('errorCategory' + errorCategory);
+newWindow.document.write('desiredText' + desiredText);
 
 
 
