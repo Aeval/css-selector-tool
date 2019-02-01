@@ -144,13 +144,44 @@ if ($("#nd___box")[0]) {
 */
 
 
+var desiredText = document.getElementsByClassName('tab-content')[0].innerHTML;
+//var errorCategory = document.getElementsByClassName('pre-scrollable').innerHTML;
+//var areaAffected = document.getElementsByClassName('tab-content')[0].innerHTML;
+//var Flags = document.getElementsByClassName('tab-content')[0].getElementsByTagName('td')
+
+
+var blob = new Blob([JSON.stringify(desiredText, null, 2)], {type : 'application/json'});
+
+
+var newWindow = window.open();
+newWindow.document.write('desiredText' + blob);
+
+
+
+/*
+
+var tabCount = document.getElementsByClassName('nav nav-tabs')[0].getElementsByTagName('li').length
+alert(tabCount);
+
+var newWindow = window.open();
+
+for (var i = 0; i < tabCount; ++i) {
+  var desiredText = document.getElementsByClassName('tab-content')[0].innerHTML;
+  newWindow.document.write(desiredText);
+}
+
+
+*/
+
+/*
+
 
 var desiredTextOne = document.getElementById('tab-main').innerHTML;
 var desiredTextTwo = document.getElementById('tab-headers').innerHTML;
 var desiredTextThree = document.getElementById('tab-cookies').innerHTML;
 var desiredTextFour = document.getElementById('tab-jdbc').innerHTML;
 var desiredTextFive = document.getElementById('tab-properties').innerHTML;
-var desiredTextSix = document.getElementById('tab-relations').innerHTML;
+//var desiredTextSix = document.getElementById('tab-relations').innerHTML;
 var desiredTextSeven = document.getElementById('tab-errors').innerHTML;
 
 var newWindow = window.open();
@@ -160,7 +191,10 @@ html += "<div id='chart2'>" + desiredTextTwo + "</div>";
 html += "<div id='chart3'>" + desiredTextThree + "</div>";
 html += "<div id='chart4'>" + desiredTextFour + "</div>";
 html += "<div id='chart5'>" + desiredTextFive + "</div>";
-html += "<div id='chart6'>" + desiredTextSix + "</div>";
+//html += "<div id='chart6'>" + desiredTextSix + "</div>";
 html += "<div id='chart7'>" + desiredTextSeven + "</div>";
 
 newWindow.document.write(html);
+
+
+*/
