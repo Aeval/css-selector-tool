@@ -10,7 +10,7 @@
 	           "128": "fox128.png" },
    "content_scripts": [ {
       "css": [ "nStyles.css" ],
-      "matches": [ "http://*/*", "https://*/*", "file://*/*" ]
+      "matches": [ "<all_urls>" ]
    } ],
    "description": "Test your css selector by using this quick script. Does not support the \"HTML\" Element or \"*\" selector.",
    "manifest_version": 2,
