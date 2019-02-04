@@ -1,3 +1,4 @@
+/*
 var nd___vo = {
   remove: function () {
     nd___vo.clean();
@@ -137,7 +138,7 @@ var desiredTextTwo = document.getElementById('tab-headers').innerHTML;
 var desiredTextThree = document.getElementById('tab-cookies').innerHTML;
 var desiredTextFour = document.getElementById('tab-jdbc').innerHTML;
 var desiredTextFive = document.getElementById('tab-properties').innerHTML;
-//var desiredTextSix = document.getElementById('tab-relations').innerHTML;
+var desiredTextSix = document.getElementById('tab-relations').innerHTML;
 var desiredTextSeven = document.getElementById('tab-errors').innerHTML;
 
 
@@ -146,7 +147,7 @@ html += "<div id='chart2'>" + desiredTextTwo + "</div>";
 html += "<div id='chart3'>" + desiredTextThree + "</div>";
 html += "<div id='chart4'>" + desiredTextFour + "</div>";
 html += "<div id='chart5'>" + desiredTextFive + "</div>";
-//html += "<div id='chart6'>" + desiredTextSix + "</div>";
+html += "<div id='chart6'>" + desiredTextSix + "</div>";
 html += "<div id='chart7'>" + desiredTextSeven + "</div>";
 
 $('#genPage').on('click', function() {
@@ -154,3 +155,18 @@ $('#genPage').on('click', function() {
 
   newWindow.document.write(html);
 });
+*/
+
+
+var headContent = document.getElementsByTagName('head')[0].innerHTML;
+var desiredText = document.getElementsByClassName('tab-content')[0].innerHTML;
+console.log(headContent)
+
+var newWindow = window.open();
+
+newWindow.document.write('<head>' + headContent + '</head>');
+newWindow.document.write('<body>' + '<div id="data">' + desiredText + '</div>' + '</body>');
+
+
+
+//newWindow.document.write(desiredText);
