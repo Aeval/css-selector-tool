@@ -3,5 +3,6 @@ chrome.browserAction.onClicked.addListener(function (tab) {
     chrome.tabs.executeScript(null, { file: "jquery-ui.min.js" });
     chrome.tabs.executeScript(null, { file: "html2canvas.min.js" });
     chrome.tabs.executeScript(null, { file: "html2canvas.js" });
-    chrome.tabs.executeScript(null, { file: "nScript.js" });
+    //chrome.tabs.executeScript(null, { file: "nScript.js" });
+    chrome.tabs.executeScript(null, { file: "nScript2.js" });
 });
