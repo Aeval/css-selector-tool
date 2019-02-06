@@ -12,13 +12,13 @@ $('div.tab-content', documentHTML).removeClass('tab-content');
 
 var newWindow = window.open();
 
+//newWindow.document.write($(documentHTML).html());
 newWindow.document.write($(documentHTML).html());
 /*
 html2canvas(newWindow.document.body).then(function(canvas) {
   newWindow.document.body.appendChild(canvas);
 });
 */
-
 
 
 
