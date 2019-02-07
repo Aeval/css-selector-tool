@@ -18,7 +18,7 @@ $('[id$=errors]', documentHTML).wrap("<div class='textTab'></div>");
 */
 
 
-var desiredTextHead = document.getElementById('HEAD').innerHTML;
+var desiredTextHead = documentHTML.document.getElementsByTagName('HEAD')[0];
 var desiredTextOne = document.getElementById('tab-main').innerHTML;
 var desiredTextTwo = document.getElementById('tab-headers').innerHTML;
 var desiredTextThree = document.getElementById('tab-cookies').innerHTML;
