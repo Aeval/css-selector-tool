@@ -1,3 +1,6 @@
+//more testing script. please continue to ignore.
+
+/*
 var documentHTML = $('<div>');
 $(documentHTML).html($('html').html());
 
@@ -17,6 +20,7 @@ $('[id$=errors]', documentHTML).unwrap("<div class='imgTab'></div>");
 $('[id$=errors]', documentHTML).wrap("<div class='textTab'></div>");
 */
 
+/*
 
 var desiredTextHead = documentHTML.document.getElementsByTagName('HEAD')[0];
 var desiredTextOne = document.getElementById('tab-main').innerHTML;
