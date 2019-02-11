@@ -7,7 +7,6 @@ $(documentHTML).find('script').remove();
 $(documentHTML).find('#frsidemenu').remove();
 $(documentHTML).find('.navbar').remove()
 $('div.tab-content', documentHTML).removeClass('tab-content');
-//everything above this line is fine. It makes the page look good.
 $('#details_table', documentHTML).unwrap("<div class='details_table'></div>");
 $('#details_table', documentHTML).wrap("<div class='imgTab'></div>");
 $('[id^=tab-]', documentHTML).wrap("<div class='imgTab'></div>");
@@ -25,23 +24,4 @@ gets the inner html of the first “imgTab” class, makes a screenshot of it wi
 If all goes well, somewhere in the code there should be several screenshots and a string of text. I’d like for each of those elements to end up in my clipboard so I can then paste them wherever, such as a Word document. Once that data has been loaded into my clipboard, I’d like for the new window to close and an alert to pop up saying that the function worked, preferably telling me how many screenshots and text fields it got.
 
 And that would do it, I think.
-*/
-
-
-//newWindow.document.write($(documentHTML).html());
-/*
-html2canvas(newWindow.document.body).then(function(canvas) {
-  newWindow.document.body.appendChild(canvas);
-});
-*/
-
-
-
-
-
-/*
-//html2canvas OGcode
-html2canvas(document.body).then(function(canvas) {
-    document.body.appendChild(canvas);
-});
 */
