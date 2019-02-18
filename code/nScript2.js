@@ -1,4 +1,5 @@
-
+//testing script. please ignore. 
+/*
 var desiredTextOne = document.getElementById('tab-main').innerHTML;
 var desiredTextTwo = document.getElementById('tab-headers').innerHTML;
 var desiredTextThree = document.getElementById('tab-cookies').innerHTML;
@@ -22,3 +23,6 @@ newWindow.document.write(html);
 html2canvas(newWindow.document.body).then(function(canvas) {
     newWindow.document.body.appendChild(canvas);
   });
+
+  */
+ 
