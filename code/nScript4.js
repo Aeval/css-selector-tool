@@ -45,4 +45,14 @@ newWindow.document.write(mainBody);
 html2canvas(newWindow.body).then(function(canvas) {
     newWindow.write(canvas);
 });
+
+experimental code
+
+var docHead = document.head;
+var docBody = document.body;
+
+var newWindow = window.open();
+newWindow.document.write(docHead).html();
+newWindow.document.write(docBody).html();
+
 */

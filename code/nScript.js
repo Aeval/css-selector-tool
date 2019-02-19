@@ -19,7 +19,7 @@ newWindow.document.write($(documentHTML).html());
 $('#sect_details_table', newWindow.document).hide();
 $('#controls_top', newWindow.document).hide();
 
-//$('.tab-pane', newWindow.document).hide();
+$('.tab-pane', newWindow.document).hide();
 $('.tab-pane', documentHTML).each(function () {
   $(this).click();
   html2canvas(newWindow.document.body).then(function(canvas) {
